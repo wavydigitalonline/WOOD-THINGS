@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wood & Things | Custom Joinery & Woodwork — Khaya Sands</title>
+  <meta name="description" content="Wood & Things — custom kitchens, TV units, bedroom cupboards, vanities, shop fitting, set building, CNC fabrication and refurbishments. Khaya Sands, Gauteng." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: 'var(--background)',
+            surface: 'var(--surface)',
+            'surface-elevated': 'var(--surface-elevated)',
+            border: 'var(--border)',
+            foreground: 'var(--foreground)',
+            muted: 'var(--muted-foreground)',
+            primary: 'var(--primary)',
+            'primary-foreground': 'var(--primary-foreground)',
+          },
+          fontFamily: {
+            display: ['"Bricolage Grotesque"', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            elegant: '0 20px 60px -15px rgba(0,0,0,0.55)',
+            card: '0 10px 30px -12px rgba(0,0,0,0.45)',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-background text-foreground font-sans antialiased">
+
+  <!-- HEADER -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-transparent py-4">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <a href="#home" class="flex items-center gap-3">
+        <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-background ring-1 ring-border overflow-hidden">
+          <img src="images/logo.png" alt="Wood & Things logo" class="h-11 w-11 object-cover" width="44" height="44" />
+        </span>
+        <span class="hidden sm:block leading-tight">
+          <span class="block font-display text-sm font-bold tracking-tight">WOOD & THINGS</span>
+          <span class="block text-[10px] uppercase tracking-[0.2em] text-muted">Custom Joinery & Woodwork</span>
+        </span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="#home" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">Home</a>
+        <a href="#services" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">Services</a>
+        <a href="#work" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">Our Work</a>
+        <a href="#about" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">About</a>
+        <a href="#faq" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">FAQ</a>
+        <a href="#contact" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-2">
+        <a href="tel:+27828456999" class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium hover:bg-surface-elevated transition">Call Now</a>
+        <a href="https://wa.me/27828456999?text=Hi%20Wood%20%26%20Things%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full gradient-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-elegant transition hover:brightness-110">Request Quote</a>
+      </div>
+
+      <button id="menu-toggle" class="lg:hidden grid h-10 w-10 place-items-center rounded-lg border border-border" aria-label="Toggle menu" aria-expanded="false">
+        <svg class="h-5 w-5" id="menu-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden glass-nav border-t border-border">
+      <div class="mx-auto max-w-7xl px-4 py-4 flex flex-col gap-1">
+        <a href="#home" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">Home</a>
+        <a href="#services" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">Services</a>
+        <a href="#work" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">Our Work</a>
+        <a href="#about" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">About</a>
+        <a href="#faq" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">FAQ</a>
+        <a href="#contact" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">Contact</a>
+        <div class="flex gap-2 pt-2">
+          <a href="tel:+27828456999" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-border px-4 py-2.5 text-sm">Call</a>
+          <a href="https://wa.me/27828456999" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full gradient-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground">Quote</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="relative isolate overflow-hidden pt-28 sm:pt-32">
+      <div class="absolute inset-0 -z-10">
+        <img src="images/hero.jpg" alt="Wood & Things craftsmanship" class="h-full w-full object-cover" id="hero-img" />
+        <div class="absolute inset-0 gradient-hero"></div>
+        <div class="absolute inset-0 gradient-glow"></div>
+      </div>
+
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-20 sm:pb-28 lg:pb-36 pt-10 sm:pt-16">
+        <div class="max-w-3xl animate-fade-up">
+          <span class="inline-flex items-center gap-2 rounded-full glass px-3 py-1.5 text-xs font-medium text-muted">
+            <span class="h-1.5 w-1.5 rounded-full bg-primary pulse-dot"></span>
+            Custom joinery · Khaya Sands · Gauteng
+          </span>
+          <h1 class="mt-5 font-display text-4xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
+            Built in wood.<br />
+            <span class="gradient-text">Made to last.</span>
+          </h1>
+          <p class="mt-6 max-w-2xl text-base sm:text-lg text-muted leading-relaxed">
+            Kitchens, cupboards, TV units, vanities, shop fitting, set building and CNC fabrication — crafted with care for homes and businesses.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="https://wa.me/27828456999?text=Hi%20Wood%20%26%20Things%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full gradient-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-elegant hover:brightness-110 transition">Request a Free Quote</a>
+            <a href="tel:+27828456999" class="inline-flex items-center gap-2 rounded-full glass px-6 py-3.5 text-sm font-semibold hover:bg-white/10 transition">Call Now</a>
+          </div>
+          <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
+            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary">◆</span><span class="text-xs sm:text-sm font-medium">Custom joinery</span></div>
+            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary">◆</span><span class="text-xs sm:text-sm font-medium">CNC fabrication</span></div>
+            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary">◆</span><span class="text-xs sm:text-sm font-medium">Shop fitting</span></div>
+            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary">◆</span><span class="text-xs sm:text-sm font-medium">Khaya Sands</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section-padding">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-10 sm:mb-14">
+          <p class="eyebrow">What we build</p>
+          <h2 class="section-title">Full-range <span class="gradient-text">woodwork & joinery</span></h2>
+          <p class="section-sub">From residential kitchens to commercial shop fitting and set builds — one workshop, one standard.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Kitchens</p><p class="text-xs text-muted">Custom units, layouts & finishes</p></div></div>
+          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">TV Units</p><p class="text-xs text-muted">Media walls & feature units</p></div></div>
+          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Bedroom Cupboards</p><p class="text-xs text-muted">Built-in storage that fits</p></div></div>
+          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Vanities</p><p class="text-xs text-muted">Bathroom & powder room pieces</p></div></div>
+          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Shop Fitting</p><p class="text-xs text-muted">Retail & commercial interiors</p></div></div>
+          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Set Building</p><p class="text-xs text-muted">Sets for production & events</p></div></div>
+          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">CNC Fabrication</p><p class="text-xs text-muted">Precision cutting & components</p></div></div>
+          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Refurbishments</p><p class="text-xs text-muted">Refresh, repair & upgrade</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section-padding">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-10 sm:mb-14">
+          <p class="eyebrow">Why Wood & Things</p>
+          <h2 class="section-title">What <span class="gradient-text">sets us apart</span></h2>
+          <p class="section-sub">Practical craft. Clear communication. Work that holds up in real homes and real spaces.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="feature-card"><div class="feature-icon">✓</div><h3 class="font-semibold">Custom to the space</h3><p class="mt-2 text-sm text-muted">Measured, designed and built for how you actually live and work.</p></div>
+          <div class="feature-card"><div class="feature-icon">◆</div><h3 class="font-semibold">Workshop capability</h3><p class="mt-2 text-sm text-muted">Joinery, CNC and fabrication under one roof for cleaner results.</p></div>
+          <div class="feature-card"><div class="feature-icon">💬</div><h3 class="font-semibold">Clear quotes</h3><p class="mt-2 text-sm text-muted">Talk through scope, materials and timelines before work starts.</p></div>
+          <div class="feature-card"><div class="feature-icon">🏠</div><h3 class="font-semibold">Homes & commercial</h3><p class="mt-2 text-sm text-muted">Residential joinery and shop fitting / set work when you need it.</p></div>
+          <div class="feature-card"><div class="feature-icon">🔧</div><h3 class="font-semibold">Refurbishments</h3><p class="mt-2 text-sm text-muted">Upgrade existing units and fittings without starting from zero.</p></div>
+          <div class="feature-card"><div class="feature-icon">📍</div><h3 class="font-semibold">Khaya Sands based</h3><p class="mt-2 text-sm text-muted">Serving clients across Johannesburg and surrounding areas.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK: images only, no videos -->
+    <section id="work" class="section-padding">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-10 sm:mb-14">
+          <p class="eyebrow">In the workshop</p>
+          <h2 class="section-title">See the <span class="gradient-text">work</span></h2>
+          <p class="section-sub">Real projects — kitchens, units, fittings and fabrication.</p>
+        </div>
+
+        <div class="carousel-wrap">
+          <button type="button" class="carousel-btn" id="carouselPrev" aria-label="Previous">‹</button>
+          <div class="carousel" id="carousel">
+            <div class="carousel-track">
+              <img src="images/work-1.jpg" alt="Wood & Things project" />
+              <img src="images/work-2.jpg" alt="Wood & Things project" />
+              <img src="images/work-3.jpg" alt="Wood & Things project" />
+              <img src="images/work-4.jpg" alt="Wood & Things project" />
+              <img src="images/work-5.jpg" alt="Wood & Things project" />
+              <img src="images/work-6.jpg" alt="Wood & Things project" />
+              <img src="images/work-7.jpg" alt="Wood & Things project" />
+              <img src="images/work-8.jpg" alt="Wood & Things project" />
+            </div>
+          </div>
+          <button type="button" class="carousel-btn" id="carouselNext" aria-label="Next">›</button>
+        </div>
+        <p class="carousel-hint">Tap a photo for full size · Swipe to browse</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-padding">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <p class="eyebrow">About Us</p>
+        <h2 class="section-title mb-8">Wood that works — <span class="gradient-text">built for the way you live</span></h2>
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+          <div class="lg:col-span-3 space-y-5 text-muted leading-relaxed">
+            <p>Wood & Things is a joinery and woodwork workshop focused on practical, well-finished pieces for homes and businesses — from full kitchens and bedroom cupboards to TV units, vanities, shop fitting and set building.</p>
+            <p>We combine traditional craft with CNC fabrication so measurements stay true and details stay sharp. Whether it’s a new install or a refurbishment, the goal is the same: solid work that fits the space and lasts.</p>
+            <p class="text-foreground font-medium">Based at Verona Park, Khaya Sands · Serving Johannesburg and surrounds</p>
+          </div>
+          <div class="lg:col-span-2">
+            <div class="feature-card">
+              <img src="images/logo.png" alt="" class="h-16 w-16 rounded-2xl object-cover ring-1 ring-border" />
+              <p class="mt-5 text-lg font-display font-semibold leading-snug">"Measured. Built. Installed."</p>
+              <p class="mt-3 text-sm text-muted">23 Staal Street, 10 Verona Park, Khaya Sands</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-10 sm:mb-14">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title">Answers, <span class="gradient-text">upfront</span></h2>
+        </div>
+        <div class="mx-auto max-w-3xl space-y-3">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span class="font-medium">Do you do custom kitchens from scratch?</span><span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">Yes. We design and build kitchens to fit your space, layout and finish preferences — then install.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span class="font-medium">Can you refurbish existing cupboards or units?</span><span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">Yes. Refurbishments are part of what we do — update, repair or rework without always starting over.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span class="font-medium">Do you offer free quotations?</span><span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">Yes. WhatsApp or use the form — share the project type and area and we’ll come back with a clear quote path.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span class="font-medium">What areas do you service?</span><span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">We’re based in Khaya Sands (Verona Park) and work across Johannesburg and surrounding areas.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false"><span class="font-medium">Do you handle commercial / shop fitting?</span><span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">Yes — shop fitting, set building and commercial joinery alongside residential work.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="mx-auto max-w-6xl relative overflow-hidden rounded-3xl border border-border p-8 sm:p-14 shadow-elegant cta-panel">
+        <div class="relative">
+          <h2 class="section-title">Ready to build <span class="gradient-text">something solid?</span></h2>
+          <p class="mt-4 max-w-xl text-muted leading-relaxed">Tell us about the kitchen, cupboard, unit or fit-out. We’ll come back with a clear next step and quote.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="https://wa.me/27828456999?text=Hi%20Wood%20%26%20Things%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" class="btn-primary">WhatsApp Quote</a>
+            <a href="tel:+27828456999" class="glass rounded-full px-6 py-3.5 text-sm font-semibold hover:bg-white/10 transition inline-flex items-center gap-2">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT + QUOTE -->
+    <section id="contact" class="section-padding">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-10">
+          <p class="eyebrow">Get in touch</p>
+          <h2 class="section-title">Contact <span class="gradient-text">Wood & Things</span></h2>
+          <p class="section-sub">Call, WhatsApp or request a free quote below.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-14">
+          <a href="tel:+27828456999" class="contact-card"><span class="contact-icon">📞</span><p class="text-xs uppercase tracking-widest text-muted mt-4">Phone</p><p class="text-lg font-semibold mt-1">082 845 6999</p></a>
+          <a href="https://wa.me/27828456999" target="_blank" rel="noopener" class="contact-card"><span class="contact-icon">💬</span><p class="text-xs uppercase tracking-widest text-muted mt-4">WhatsApp</p><p class="text-lg font-semibold mt-1 text-primary">082 845 6999</p></a>
+          <a href="mailto:info@woodandthingsza.co.za" class="contact-card"><span class="contact-icon">✉️</span><p class="text-xs uppercase tracking-widest text-muted mt-4">Email</p><p class="text-lg font-semibold mt-1 break-all">info@woodandthingsza.co.za</p></a>
+          <div class="contact-card sm:col-span-2 lg:col-span-3"><span class="contact-icon">📍</span><p class="text-xs uppercase tracking-widest text-muted mt-4">Address</p><p class="text-lg font-semibold mt-1">23 Staal Street, 10 Verona Park, Khaya Sands</p></div>
+        </div>
+
+        <div class="flex flex-wrap gap-3 mb-14">
+          <a href="https://www.instagram.com/woodandthingsza?igsi=MWQ4bXB3eXQxaXlsNw==" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2.5 text-sm hover:bg-surface-elevated transition">Instagram</a>
+          <a href="https://www.facebook.com/share/19EJG1HHxJ/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2.5 text-sm hover:bg-surface-elevated transition">Facebook</a>
+          <a href="https://share.google/2q3r9kk0zGvgJI2Aq" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2.5 text-sm hover:bg-surface-elevated transition">Google</a>
+        </div>
+
+        <div class="quote-form-card max-w-2xl">
+          <h3 class="font-display text-xl font-bold mb-2">Request a free quote</h3>
+          <p class="text-sm text-muted mb-6">We’ll respond via WhatsApp or phone.</p>
+          <form id="quote-form">
+            <label class="form-label" for="name">Full name *</label>
+            <input class="form-input" type="text" id="name" name="name" required placeholder="Your name" />
+
+            <label class="form-label" for="phone">Phone / WhatsApp *</label>
+            <input class="form-input" type="tel" id="phone" name="phone" required placeholder="082 000 0000" />
+
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" />
+
+            <label class="form-label" for="project_type">Project type *</label>
+            <select class="form-input" id="project_type" name="project_type" required>
+              <option value="">Select…</option>
+              <option value="Kitchen">Kitchen</option>
+              <option value="TV unit">TV unit</option>
+              <option value="Bedroom cupboards">Bedroom cupboards</option>
+              <option value="Vanity">Vanity</option>
+              <option value="Shop fitting">Shop fitting</option>
+              <option value="Set building">Set building</option>
+              <option value="CNC fabrication">CNC fabrication</option>
+              <option value="Refurbishment">Refurbishment</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <label class="form-label" for="location">Location / Suburb *</label>
+            <input class="form-input" type="text" id="location" name="location" required placeholder="e.g. Fourways" />
+
+            <label class="form-label" for="message">Project details</label>
+            <textarea class="form-input" id="message" name="message" rows="3" placeholder="Size, materials, timeline…"></textarea>
+
+            <p class="text-xs text-muted mt-5 mb-4">Your details are only used for this quote.</p>
+            <button type="submit" class="btn-primary w-full" id="quote-submit">Send quote request</button>
+            <p id="quote-status" class="text-sm mt-4 hidden"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-border">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3">
+            <span class="grid h-11 w-11 place-items-center rounded-xl bg-surface ring-1 ring-border overflow-hidden">
+              <img src="images/logo.png" alt="Wood & Things" class="h-11 w-11 object-cover" />
+            </span>
+            <span>
+              <span class="block font-display font-bold">WOOD & THINGS</span>
+              <span class="block text-xs text-muted">Custom Joinery & Woodwork</span>
+            </span>
+          </div>
+          <p class="mt-5 text-sm text-muted leading-relaxed max-w-sm">Custom kitchens, cupboards, units, shop fitting and CNC — built in Khaya Sands.</p>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-widest text-muted mb-4">Quick links</p>
+          <ul class="space-y-2 text-sm text-muted">
+            <li><a href="#services" class="hover:text-foreground">Services</a></li>
+            <li><a href="#work" class="hover:text-foreground">Our Work</a></li>
+            <li><a href="#about" class="hover:text-foreground">About</a></li>
+            <li><a href="#contact" class="hover:text-foreground">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-widest text-muted mb-4">Contact</p>
+          <ul class="space-y-2 text-sm text-muted">
+            <li><a href="tel:+27828456999" class="hover:text-foreground">082 845 6999</a></li>
+            <li><a href="mailto:info@woodandthingsza.co.za" class="hover:text-foreground break-all">info@woodandthingsza.co.za</a></li>
+            <li><a href="https://wa.me/27828456999" target="_blank" rel="noopener" class="hover:text-foreground">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/woodandthingsza?igsi=MWQ4bXB3eXQxaXlsNw==" target="_blank" rel="noopener" class="hover:text-foreground">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row gap-3 items-center justify-between text-xs text-muted">
+        <p>© <span id="year"></span> Wood & Things. All rights reserved.</p>
+        <p>Made by <a href="https://gliss.co.za/" target="_blank" rel="noopener" class="text-primary hover:underline">GLISS</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
