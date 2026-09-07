@@ -455,9 +455,35 @@ textarea.form-input { resize: vertical; }
   pointer-events: none;
 }
 
+/* Work categories */
+.work-category {
+  margin-bottom: 2.75rem;
+}
+.work-category:last-of-type {
+  margin-bottom: 0.5rem;
+}
+.work-category-head {
+  margin-bottom: 0.75rem;
+}
+.work-category-title {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+  color: var(--foreground);
+}
+@media (min-width: 640px) {
+  .work-category-title { font-size: 1.5rem; }
+}
+.work-category-sub {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
 .carousel-wrap {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 0.75rem;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -483,14 +509,15 @@ textarea.form-input { resize: vertical; }
 }
 .carousel-track img {
   flex: 0 0 auto !important;
-  width: min(260px, 78vw) !important;
-  aspect-ratio: 9 / 16 !important;
+  width: min(280px, 78vw) !important;
+  aspect-ratio: 4 / 3 !important;
   height: auto !important;
   object-fit: cover !important;
   border-radius: 1rem;
   scroll-snap-align: start;
   cursor: pointer;
   border: 1px solid var(--border);
+  background: var(--surface);
 }
 .carousel-btn {
   flex-shrink: 0;

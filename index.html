@@ -164,32 +164,96 @@
       </div>
     </section>
 
-    <!-- WORK: images only, no videos -->
+    <!-- WORK: 4 categories matching client folders -->
     <section id="work" class="section-padding">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl mb-10 sm:mb-14">
           <p class="eyebrow">In the workshop</p>
           <h2 class="section-title">See the <span class="gradient-text">work</span></h2>
-          <p class="section-sub">Real projects — kitchens, units, fittings and fabrication.</p>
+          <p class="section-sub">Real projects by category — kitchens, TV units, built-in cupboards and set builds.</p>
         </div>
 
-        <div class="carousel-wrap">
-          <button type="button" class="carousel-btn" id="carouselPrev" aria-label="Previous">‹</button>
-          <div class="carousel" id="carousel">
-            <div class="carousel-track">
-              <img src="images/work-1.jpg" alt="Wood & Things project" />
-              <img src="images/work-2.jpg" alt="Wood & Things project" />
-              <img src="images/work-3.jpg" alt="Wood & Things project" />
-              <img src="images/work-4.jpg" alt="Wood & Things project" />
-              <img src="images/work-5.jpg" alt="Wood & Things project" />
-              <img src="images/work-6.jpg" alt="Wood & Things project" />
-              <img src="images/work-7.jpg" alt="Wood & Things project" />
-              <img src="images/work-8.jpg" alt="Wood & Things project" />
-            </div>
+        <!-- Kitchens -->
+        <div class="work-category" data-category="kitchens">
+          <div class="work-category-head">
+            <h3 class="work-category-title">Kitchens</h3>
+            <p class="work-category-sub">Custom units, layouts and finishes</p>
           </div>
-          <button type="button" class="carousel-btn" id="carouselNext" aria-label="Next">›</button>
+          <div class="carousel-wrap">
+            <button type="button" class="carousel-btn carousel-prev" aria-label="Previous">‹</button>
+            <div class="carousel">
+              <div class="carousel-track">
+                <img src="images/kitchen-1.jpg" alt="Custom kitchen by Wood & Things" />
+                <img src="images/kitchen-2.jpg" alt="Custom kitchen by Wood & Things" />
+                <img src="images/kitchen-3.jpg" alt="Custom kitchen by Wood & Things" />
+                <img src="images/kitchen-4.jpg" alt="Custom kitchen by Wood & Things" />
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-next" aria-label="Next">›</button>
+          </div>
         </div>
-        <p class="carousel-hint">Tap a photo for full size · Swipe to browse</p>
+
+        <!-- TV Units -->
+        <div class="work-category" data-category="tv-units">
+          <div class="work-category-head">
+            <h3 class="work-category-title">TV Units</h3>
+            <p class="work-category-sub">Media walls and feature units</p>
+          </div>
+          <div class="carousel-wrap">
+            <button type="button" class="carousel-btn carousel-prev" aria-label="Previous">‹</button>
+            <div class="carousel">
+              <div class="carousel-track">
+                <img src="images/tv-1.jpg" alt="TV unit by Wood & Things" />
+                <img src="images/tv-2.jpg" alt="TV unit by Wood & Things" />
+                <img src="images/tv-3.jpg" alt="TV unit by Wood & Things" />
+                <img src="images/tv-4.jpg" alt="TV unit by Wood & Things" />
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-next" aria-label="Next">›</button>
+          </div>
+        </div>
+
+        <!-- BICs / Bedroom cupboards -->
+        <div class="work-category" data-category="bic">
+          <div class="work-category-head">
+            <h3 class="work-category-title">Bedroom Cupboards (BICs)</h3>
+            <p class="work-category-sub">Built-in storage that fits the room</p>
+          </div>
+          <div class="carousel-wrap">
+            <button type="button" class="carousel-btn carousel-prev" aria-label="Previous">‹</button>
+            <div class="carousel">
+              <div class="carousel-track">
+                <img src="images/bic-1.jpg" alt="Bedroom cupboard by Wood & Things" />
+                <img src="images/bic-2.jpg" alt="Bedroom cupboard by Wood & Things" />
+                <img src="images/bic-3.jpg" alt="Bedroom cupboard by Wood & Things" />
+                <img src="images/bic-4.jpg" alt="Bedroom cupboard by Wood & Things" />
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-next" aria-label="Next">›</button>
+          </div>
+        </div>
+
+        <!-- Set Builds & Other -->
+        <div class="work-category" data-category="set-builds">
+          <div class="work-category-head">
+            <h3 class="work-category-title">Set Builds &amp; Other</h3>
+            <p class="work-category-sub">Shop fitting, sets, CNC and special builds</p>
+          </div>
+          <div class="carousel-wrap">
+            <button type="button" class="carousel-btn carousel-prev" aria-label="Previous">‹</button>
+            <div class="carousel">
+              <div class="carousel-track">
+                <img src="images/set-1.jpg" alt="Set build by Wood & Things" />
+                <img src="images/set-2.jpg" alt="Set build by Wood & Things" />
+                <img src="images/set-3.jpg" alt="Shop fitting by Wood & Things" />
+                <img src="images/set-4.jpg" alt="Custom woodwork by Wood & Things" />
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-next" aria-label="Next">›</button>
+          </div>
+        </div>
+
+        <p class="carousel-hint">Tap a photo for full size · Swipe each row to browse</p>
       </div>
     </section>
 
