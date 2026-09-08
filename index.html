@@ -40,25 +40,35 @@
 </head>
 <body class="bg-background text-foreground font-sans antialiased">
 
-  <!-- HEADER -->
+  <!-- HEADER — sizing matches The Kleeners -->
   <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-transparent py-4">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-      <a href="#home" class="flex items-center gap-3">
-        <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-background ring-1 ring-border overflow-hidden">
-          <img src="images/logo.png" alt="Wood & Things logo" class="h-11 w-11 object-cover" width="44" height="44" />
-        </span>
-        <span class="hidden sm:block leading-tight">
-          <span class="block font-display text-sm font-bold tracking-tight">WOOD & THINGS</span>
-          <span class="block text-[10px] uppercase tracking-[0.2em] text-muted">Custom Joinery & Woodwork</span>
-        </span>
-      </a>
+      <div class="header-brand">
+        <a href="#home" class="flex items-center gap-3 sm:gap-4 min-w-0">
+          <span class="header-logo shrink-0 overflow-hidden rounded-2xl bg-background ring-1 ring-border">
+            <img src="images/logo.png" alt="Wood & Things logo" class="h-full w-full object-cover" width="120" height="120" />
+          </span>
+          <span class="header-brand-text leading-tight min-w-0">
+            <span class="block font-display text-xl sm:text-3xl font-bold tracking-tight">WOOD &amp; THINGS</span>
+            <span class="block text-sm sm:text-lg uppercase tracking-[0.12em] text-muted mt-1.5">Custom Joinery &amp; Woodwork</span>
+            <div class="header-socials social-row">
+              <a href="https://www.facebook.com/share/1EM4CDq29m/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook" title="Facebook">
+                <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/woodandthingsza/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" title="Instagram">
+                <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+            </div>
+          </span>
+        </a>
+      </div>
 
       <nav class="hidden lg:flex items-center gap-1">
         <a href="#home" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">Home</a>
         <a href="#services" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">Services</a>
         <a href="#work" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">Our Work</a>
+        <a href="#reviews" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">Reviews</a>
         <a href="#about" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">About</a>
-        <a href="#faq" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">FAQ</a>
         <a href="#contact" class="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:text-foreground hover:bg-white/5">Contact</a>
       </nav>
 
@@ -77,8 +87,8 @@
         <a href="#home" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">Home</a>
         <a href="#services" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">Services</a>
         <a href="#work" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">Our Work</a>
+        <a href="#reviews" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">Reviews</a>
         <a href="#about" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">About</a>
-        <a href="#faq" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">FAQ</a>
         <a href="#contact" class="mobile-link rounded-lg px-3 py-2.5 text-sm text-muted hover:text-foreground hover:bg-white/5">Contact</a>
         <div class="flex gap-2 pt-2">
           <a href="tel:+27828456999" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-border px-4 py-2.5 text-sm">Call</a>
@@ -90,7 +100,7 @@
 
   <main>
     <!-- HERO -->
-    <section id="home" class="relative isolate overflow-hidden pt-28 sm:pt-32">
+    <section id="home" class="relative isolate overflow-hidden pt-36 sm:pt-44">
       <div class="absolute inset-0 -z-10">
         <img src="images/hero.jpg" alt="Wood & Things craftsmanship" class="h-full w-full object-cover" id="hero-img" />
         <div class="absolute inset-0 gradient-hero"></div>
@@ -115,10 +125,10 @@
             <a href="tel:+27828456999" class="inline-flex items-center gap-2 rounded-full glass px-6 py-3.5 text-sm font-semibold hover:bg-white/10 transition">Call Now</a>
           </div>
           <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
-            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary">◆</span><span class="text-xs sm:text-sm font-medium">Custom joinery</span></div>
-            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary">◆</span><span class="text-xs sm:text-sm font-medium">CNC fabrication</span></div>
-            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary">◆</span><span class="text-xs sm:text-sm font-medium">Shop fitting</span></div>
-            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary">◆</span><span class="text-xs sm:text-sm font-medium">Khaya Sands</span></div>
+            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary text-base">🪵</span><span class="text-xs sm:text-sm font-medium">Custom joinery</span></div>
+            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary text-base">⚙️</span><span class="text-xs sm:text-sm font-medium">CNC fabrication</span></div>
+            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary text-base">🏪</span><span class="text-xs sm:text-sm font-medium">Shop fitting</span></div>
+            <div class="glass rounded-xl px-3 py-3 flex items-center gap-2"><span class="text-primary text-base">📍</span><span class="text-xs sm:text-sm font-medium">Khaya Sands</span></div>
           </div>
         </div>
       </div>
@@ -129,18 +139,19 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl mb-10 sm:mb-14">
           <p class="eyebrow">What we build</p>
-          <h2 class="section-title">Full-range <span class="gradient-text">woodwork & joinery</span></h2>
+          <h2 class="section-title">Full-range <span class="gradient-text">woodwork &amp; joinery</span></h2>
           <p class="section-sub">From residential kitchens to commercial shop fitting and set builds — one workshop, one standard.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Kitchens</p><p class="text-xs text-muted">Custom units, layouts & finishes</p></div></div>
-          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">TV Units</p><p class="text-xs text-muted">Media walls & feature units</p></div></div>
-          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Bedroom Cupboards</p><p class="text-xs text-muted">Built-in storage that fits</p></div></div>
-          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Vanities</p><p class="text-xs text-muted">Bathroom & powder room pieces</p></div></div>
-          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Shop Fitting</p><p class="text-xs text-muted">Retail & commercial interiors</p></div></div>
-          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Set Building</p><p class="text-xs text-muted">Sets for production & events</p></div></div>
-          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">CNC Fabrication</p><p class="text-xs text-muted">Precision cutting & components</p></div></div>
-          <div class="service-card"><span class="service-icon">◆</span><div><p class="font-semibold text-sm">Refurbishments</p><p class="text-xs text-muted">Refresh, repair & upgrade</p></div></div>
+          <div class="service-card"><span class="service-icon">🍳</span><div><p class="font-semibold text-sm">Kitchens</p><p class="text-xs text-muted">Custom units, layouts &amp; finishes</p></div></div>
+          <div class="service-card"><span class="service-icon">📺</span><div><p class="font-semibold text-sm">TV Units</p><p class="text-xs text-muted">Media walls &amp; feature units</p></div></div>
+          <div class="service-card"><span class="service-icon">🛏️</span><div><p class="font-semibold text-sm">Bedroom Cupboards</p><p class="text-xs text-muted">Built-in storage that fits</p></div></div>
+          <div class="service-card"><span class="service-icon">🪞</span><div><p class="font-semibold text-sm">Vanities</p><p class="text-xs text-muted">Bathroom &amp; powder room pieces</p></div></div>
+          <div class="service-card"><span class="service-icon">🏪</span><div><p class="font-semibold text-sm">Shop Fitting</p><p class="text-xs text-muted">Retail &amp; commercial interiors</p></div></div>
+          <div class="service-card"><span class="service-icon">🎬</span><div><p class="font-semibold text-sm">Set Building</p><p class="text-xs text-muted">Sets for production &amp; events</p></div></div>
+          <div class="service-card"><span class="service-icon">⚙️</span><div><p class="font-semibold text-sm">CNC Fabrication</p><p class="text-xs text-muted">Precision cutting &amp; components</p></div></div>
+          <div class="service-card"><span class="service-icon">🔧</span><div><p class="font-semibold text-sm">Refurbishments</p><p class="text-xs text-muted">Refresh, repair &amp; upgrade</p></div></div>
+          <div class="service-card"><span class="service-icon">🪵</span><div><p class="font-semibold text-sm">Bars &amp; all things wood</p><p class="text-xs text-muted">Bars, counters &amp; special pieces</p></div></div>
         </div>
       </div>
     </section>
@@ -149,35 +160,40 @@
     <section class="section-padding">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl mb-10 sm:mb-14">
-          <p class="eyebrow">Why Wood & Things</p>
+          <p class="eyebrow">Why Wood &amp; Things</p>
           <h2 class="section-title">What <span class="gradient-text">sets us apart</span></h2>
           <p class="section-sub">Practical craft. Clear communication. Work that holds up in real homes and real spaces.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          <div class="feature-card"><div class="feature-icon">✓</div><h3 class="font-semibold">Custom to the space</h3><p class="mt-2 text-sm text-muted">Measured, designed and built for how you actually live and work.</p></div>
-          <div class="feature-card"><div class="feature-icon">◆</div><h3 class="font-semibold">Workshop capability</h3><p class="mt-2 text-sm text-muted">Joinery, CNC and fabrication under one roof for cleaner results.</p></div>
-          <div class="feature-card"><div class="feature-icon">💬</div><h3 class="font-semibold">Clear quotes</h3><p class="mt-2 text-sm text-muted">Talk through scope, materials and timelines before work starts.</p></div>
-          <div class="feature-card"><div class="feature-icon">🏠</div><h3 class="font-semibold">Homes & commercial</h3><p class="mt-2 text-sm text-muted">Residential joinery and shop fitting / set work when you need it.</p></div>
-          <div class="feature-card"><div class="feature-icon">🔧</div><h3 class="font-semibold">Refurbishments</h3><p class="mt-2 text-sm text-muted">Upgrade existing units and fittings without starting from zero.</p></div>
-          <div class="feature-card"><div class="feature-icon">📍</div><h3 class="font-semibold">Khaya Sands based</h3><p class="mt-2 text-sm text-muted">Serving clients across Johannesburg and surrounding areas.</p></div>
+          <div class="feature-card">
+            <p class="font-display text-lg font-semibold">Measured to your space</p>
+            <p class="mt-2 text-sm text-muted leading-relaxed">We design around the room you have — not a catalogue template.</p>
+          </div>
+          <div class="feature-card">
+            <p class="font-display text-lg font-semibold">Craft + CNC</p>
+            <p class="mt-2 text-sm text-muted leading-relaxed">Traditional joinery with precision cutting so edges stay true and details stay sharp.</p>
+          </div>
+          <div class="feature-card">
+            <p class="font-display text-lg font-semibold">Installed properly</p>
+            <p class="mt-2 text-sm text-muted leading-relaxed">From workshop to wall — we finish the job so it sits right and lasts.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- WORK: 4 categories matching client folders -->
+    <!-- WORK — 6 images per category + vanities -->
     <section id="work" class="section-padding">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl mb-10 sm:mb-14">
-          <p class="eyebrow">In the workshop</p>
+          <p class="eyebrow">Portfolio</p>
           <h2 class="section-title">See the <span class="gradient-text">work</span></h2>
-          <p class="section-sub">Real projects by category — kitchens, TV units, built-in cupboards and set builds.</p>
+          <p class="section-sub">Kitchens, TV units, BICs, set builds, vanities and more — built in Khaya Sands.</p>
         </div>
 
-        <!-- Kitchens -->
         <div class="work-category" data-category="kitchens">
           <div class="work-category-head">
             <h3 class="work-category-title">Kitchens</h3>
-            <p class="work-category-sub">Custom units, layouts and finishes</p>
+            <p class="work-category-sub">Custom kitchens, layouts and finishes</p>
           </div>
           <div class="carousel-wrap">
             <button type="button" class="carousel-btn carousel-prev" aria-label="Previous">‹</button>
@@ -187,13 +203,14 @@
                 <img src="images/kitchen-2.jpg" alt="Custom kitchen by Wood & Things" />
                 <img src="images/kitchen-3.jpg" alt="Custom kitchen by Wood & Things" />
                 <img src="images/kitchen-4.jpg" alt="Custom kitchen by Wood & Things" />
+                <img src="images/kitchen-5.jpg" alt="Custom kitchen by Wood & Things" />
+                <img src="images/kitchen-6.jpg" alt="Custom kitchen by Wood & Things" />
               </div>
             </div>
             <button type="button" class="carousel-btn carousel-next" aria-label="Next">›</button>
           </div>
         </div>
 
-        <!-- TV Units -->
         <div class="work-category" data-category="tv-units">
           <div class="work-category-head">
             <h3 class="work-category-title">TV Units</h3>
@@ -207,33 +224,35 @@
                 <img src="images/tv-2.jpg" alt="TV unit by Wood & Things" />
                 <img src="images/tv-3.jpg" alt="TV unit by Wood & Things" />
                 <img src="images/tv-4.jpg" alt="TV unit by Wood & Things" />
+                <img src="images/tv-5.jpg" alt="TV unit by Wood & Things" />
+                <img src="images/tv-6.jpg" alt="TV unit by Wood & Things" />
               </div>
             </div>
             <button type="button" class="carousel-btn carousel-next" aria-label="Next">›</button>
           </div>
         </div>
 
-        <!-- BICs / Bedroom cupboards -->
         <div class="work-category" data-category="bic">
           <div class="work-category-head">
-            <h3 class="work-category-title">Bedroom Cupboards (BICs)</h3>
-            <p class="work-category-sub">Built-in storage that fits the room</p>
+            <h3 class="work-category-title">Built-in Cupboards</h3>
+            <p class="work-category-sub">Bedroom storage built to fit</p>
           </div>
           <div class="carousel-wrap">
             <button type="button" class="carousel-btn carousel-prev" aria-label="Previous">‹</button>
             <div class="carousel">
               <div class="carousel-track">
-                <img src="images/bic-1.jpg" alt="Bedroom cupboard by Wood & Things" />
-                <img src="images/bic-2.jpg" alt="Bedroom cupboard by Wood & Things" />
-                <img src="images/bic-3.jpg" alt="Bedroom cupboard by Wood & Things" />
-                <img src="images/bic-4.jpg" alt="Bedroom cupboard by Wood & Things" />
+                <img src="images/bic-1.jpg" alt="Built-in cupboard by Wood & Things" />
+                <img src="images/bic-2.jpg" alt="Built-in cupboard by Wood & Things" />
+                <img src="images/bic-3.jpg" alt="Built-in cupboard by Wood & Things" />
+                <img src="images/bic-4.jpg" alt="Built-in cupboard by Wood & Things" />
+                <img src="images/bic-5.jpg" alt="Built-in cupboard by Wood & Things" />
+                <img src="images/bic-6.jpg" alt="Built-in cupboard by Wood & Things" />
               </div>
             </div>
             <button type="button" class="carousel-btn carousel-next" aria-label="Next">›</button>
           </div>
         </div>
 
-        <!-- Set Builds & Other -->
         <div class="work-category" data-category="set-builds">
           <div class="work-category-head">
             <h3 class="work-category-title">Set Builds &amp; Other</h3>
@@ -247,6 +266,29 @@
                 <img src="images/set-2.jpg" alt="Set build by Wood & Things" />
                 <img src="images/set-3.jpg" alt="Shop fitting by Wood & Things" />
                 <img src="images/set-4.jpg" alt="Custom woodwork by Wood & Things" />
+                <img src="images/set-5.jpg" alt="CNC and custom build by Wood & Things" />
+                <img src="images/set-6.jpg" alt="Special project by Wood & Things" />
+              </div>
+            </div>
+            <button type="button" class="carousel-btn carousel-next" aria-label="Next">›</button>
+          </div>
+        </div>
+
+        <div class="work-category" data-category="vanities">
+          <div class="work-category-head">
+            <h3 class="work-category-title">Vanities, bars &amp; all things wood</h3>
+            <p class="work-category-sub">Vanities, bars, counters and special pieces</p>
+          </div>
+          <div class="carousel-wrap">
+            <button type="button" class="carousel-btn carousel-prev" aria-label="Previous">‹</button>
+            <div class="carousel">
+              <div class="carousel-track">
+                <img src="images/vanity-1.jpg" alt="Vanity by Wood & Things" />
+                <img src="images/vanity-2.jpg" alt="Bar by Wood & Things" />
+                <img src="images/vanity-3.jpg" alt="Custom wood piece by Wood & Things" />
+                <img src="images/vanity-4.jpg" alt="Vanity and storage by Wood & Things" />
+                <img src="images/vanity-5.jpg" alt="Bar counter by Wood & Things" />
+                <img src="images/vanity-6.jpg" alt="All things wood by Wood & Things" />
               </div>
             </div>
             <button type="button" class="carousel-btn carousel-next" aria-label="Next">›</button>
@@ -257,6 +299,49 @@
       </div>
     </section>
 
+    <!-- REVIEWS -->
+    <section id="reviews" class="section-padding">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-10 sm:mb-14">
+          <p class="eyebrow">Client feedback</p>
+          <h2 class="section-title">What clients <span class="gradient-text">say</span></h2>
+          <p class="section-sub">Real reviews from people who had work built and installed.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="text-sm text-muted leading-relaxed">"The most phenomenal service and craftsmanship. They even modified the original design to ensure 100% stability. Really grateful to Wood &amp; Things. I'll be back soon."</p>
+            <p class="mt-3 text-sm font-semibold">Brydon Brotherton</p>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="text-sm text-muted leading-relaxed">"Wood and Things delivered nothing short of excellence. Attention to detail, quality finishes, and pure professionalism. Exceptional pre-care and thoughtful post-care. Highly recommended."</p>
+            <p class="mt-3 text-sm font-semibold">Rethabile Makoanyana</p>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="text-sm text-muted leading-relaxed">"What an absolute pleasure to work with this company. Transparent, informative and professional. The finished product is just absolutely beautiful. So happy with our table."</p>
+            <p class="mt-3 text-sm font-semibold">Vin Groovin</p>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="text-sm text-muted leading-relaxed">"I am very happy with their services. They go the extra mile. It is the 2nd time I made use of their services and will most certainly not be the last — wardrobe, pedestals and desktop drawers."</p>
+            <p class="mt-3 text-sm font-semibold">Pieter Roux</p>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="text-sm text-muted leading-relaxed">"Incredible work by Wood &amp; Things! Quick and efficient and awesome workmanship. Took one week from measuring to delivery. Will highly recommend them."</p>
+            <p class="mt-3 text-sm font-semibold">Natasha De Agrela</p>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="text-sm text-muted leading-relaxed">"Amazing service! From the conceptualisation to the finished product, everything was created as discussed. Great communication throughout. Will definitely be using Wood &amp; Things again."</p>
+            <p class="mt-3 text-sm font-semibold">Ryan Nair</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ABOUT -->
     <section id="about" class="section-padding">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -264,7 +349,7 @@
         <h2 class="section-title mb-8">Wood that works — <span class="gradient-text">built for the way you live</span></h2>
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
           <div class="lg:col-span-3 space-y-5 text-muted leading-relaxed">
-            <p>Wood & Things is a joinery and woodwork workshop focused on practical, well-finished pieces for homes and businesses — from full kitchens and bedroom cupboards to TV units, vanities, shop fitting and set building.</p>
+            <p>Wood &amp; Things is a joinery and woodwork workshop focused on practical, well-finished pieces for homes and businesses — from full kitchens and bedroom cupboards to TV units, vanities, shop fitting and set building.</p>
             <p>We combine traditional craft with CNC fabrication so measurements stay true and details stay sharp. Whether it’s a new install or a refurbishment, the goal is the same: solid work that fits the space and lasts.</p>
             <p class="text-foreground font-medium">Based at Verona Park, Khaya Sands · Serving Johannesburg and surrounds</p>
           </div>
@@ -282,30 +367,26 @@
     <!-- FAQ -->
     <section id="faq" class="section-padding">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="max-w-2xl mb-10 sm:mb-14">
+        <div class="max-w-2xl mb-10">
           <p class="eyebrow">FAQ</p>
           <h2 class="section-title">Answers, <span class="gradient-text">upfront</span></h2>
         </div>
-        <div class="mx-auto max-w-3xl space-y-3">
+        <div class="max-w-3xl space-y-3">
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false"><span class="font-medium">Do you do custom kitchens from scratch?</span><span class="faq-chevron">▼</span></button>
             <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">Yes. We design and build kitchens to fit your space, layout and finish preferences — then install.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false"><span class="font-medium">Can you refurbish existing cupboards or units?</span><span class="faq-chevron">▼</span></button>
-            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">Yes. Refurbishments are part of what we do — update, repair or rework without always starting over.</p></div>
+            <button class="faq-question" aria-expanded="false"><span class="font-medium">Do you measure and install on site?</span><span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">Yes. We measure, build in the workshop, and install so the work sits correctly in your space.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false"><span class="font-medium">Do you offer free quotations?</span><span class="faq-chevron">▼</span></button>
-            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">Yes. WhatsApp or use the form — share the project type and area and we’ll come back with a clear quote path.</p></div>
+            <button class="faq-question" aria-expanded="false"><span class="font-medium">Can you do shop fitting or set builds?</span><span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">Yes — retail and commercial fitting, production sets, CNC components and special projects.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false"><span class="font-medium">What areas do you service?</span><span class="faq-chevron">▼</span></button>
-            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">We’re based in Khaya Sands (Verona Park) and work across Johannesburg and surrounding areas.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false"><span class="font-medium">Do you handle commercial / shop fitting?</span><span class="faq-chevron">▼</span></button>
-            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">Yes — shop fitting, set building and commercial joinery alongside residential work.</p></div>
+            <button class="faq-question" aria-expanded="false"><span class="font-medium">Where are you based?</span><span class="faq-chevron">▼</span></button>
+            <div class="faq-answer"><p class="text-sm text-muted leading-relaxed">23 Staal Street, 10 Verona Park, Khaya Sands. We serve Johannesburg and surrounds.</p></div>
           </div>
         </div>
       </div>
@@ -313,24 +394,22 @@
 
     <!-- CTA -->
     <section class="px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
-      <div class="mx-auto max-w-6xl relative overflow-hidden rounded-3xl border border-border p-8 sm:p-14 shadow-elegant cta-panel">
-        <div class="relative">
-          <h2 class="section-title">Ready to build <span class="gradient-text">something solid?</span></h2>
-          <p class="mt-4 max-w-xl text-muted leading-relaxed">Tell us about the kitchen, cupboard, unit or fit-out. We’ll come back with a clear next step and quote.</p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="https://wa.me/27828456999?text=Hi%20Wood%20%26%20Things%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" class="btn-primary">WhatsApp Quote</a>
-            <a href="tel:+27828456999" class="glass rounded-full px-6 py-3.5 text-sm font-semibold hover:bg-white/10 transition inline-flex items-center gap-2">Call Now</a>
-          </div>
+      <div class="mx-auto max-w-4xl text-center glass rounded-3xl px-6 py-14 sm:px-12 shadow-elegant">
+        <h2 class="section-title">Ready to build <span class="gradient-text">something solid?</span></h2>
+        <p class="mt-4 max-w-xl mx-auto text-muted leading-relaxed">Tell us about the kitchen, cupboard, unit or fit-out. We’ll come back with a clear next step and quote.</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a href="https://wa.me/27828456999?text=Hi%20Wood%20%26%20Things%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full gradient-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-elegant hover:brightness-110 transition">WhatsApp Quote</a>
+          <a href="tel:+27828456999" class="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3.5 text-sm font-semibold hover:bg-white/5 transition">082 845 6999</a>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT + QUOTE -->
+    <!-- CONTACT -->
     <section id="contact" class="section-padding">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl mb-10">
           <p class="eyebrow">Get in touch</p>
-          <h2 class="section-title">Contact <span class="gradient-text">Wood & Things</span></h2>
+          <h2 class="section-title">Contact <span class="gradient-text">Wood &amp; Things</span></h2>
           <p class="section-sub">Call, WhatsApp or request a free quote below.</p>
         </div>
 
@@ -341,55 +420,20 @@
           <div class="contact-card sm:col-span-2 lg:col-span-3"><span class="contact-icon">📍</span><p class="text-xs uppercase tracking-widest text-muted mt-4">Address</p><p class="text-lg font-semibold mt-1">23 Staal Street, 10 Verona Park, Khaya Sands</p></div>
         </div>
 
-        <div class="flex flex-wrap gap-3 mb-14">
-          <a href="https://www.instagram.com/woodandthingsza?igsi=MWQ4bXB3eXQxaXlsNw==" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2.5 text-sm hover:bg-surface-elevated transition">Instagram</a>
-          <a href="https://www.facebook.com/share/19EJG1HHxJ/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2.5 text-sm hover:bg-surface-elevated transition">Facebook</a>
-          <a href="https://share.google/2q3r9kk0zGvgJI2Aq" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2.5 text-sm hover:bg-surface-elevated transition">Google</a>
-        </div>
-
-        <div class="quote-form-card max-w-2xl">
-          <h3 class="font-display text-xl font-bold mb-2">Request a free quote</h3>
-          <p class="text-sm text-muted mb-6">We’ll respond via WhatsApp or phone.</p>
-          <form id="quote-form">
-            <label class="form-label" for="name">Full name *</label>
-            <input class="form-input" type="text" id="name" name="name" required placeholder="Your name" />
-
-            <label class="form-label" for="phone">Phone / WhatsApp *</label>
-            <input class="form-input" type="tel" id="phone" name="phone" required placeholder="082 000 0000" />
-
-            <label class="form-label" for="email">Email</label>
-            <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" />
-
-            <label class="form-label" for="project_type">Project type *</label>
-            <select class="form-input" id="project_type" name="project_type" required>
-              <option value="">Select…</option>
-              <option value="Kitchen">Kitchen</option>
-              <option value="TV unit">TV unit</option>
-              <option value="Bedroom cupboards">Bedroom cupboards</option>
-              <option value="Vanity">Vanity</option>
-              <option value="Shop fitting">Shop fitting</option>
-              <option value="Set building">Set building</option>
-              <option value="CNC fabrication">CNC fabrication</option>
-              <option value="Refurbishment">Refurbishment</option>
-              <option value="Other">Other</option>
-            </select>
-
-            <label class="form-label" for="location">Location / Suburb *</label>
-            <input class="form-input" type="text" id="location" name="location" required placeholder="e.g. Fourways" />
-
-            <label class="form-label" for="message">Project details</label>
-            <textarea class="form-input" id="message" name="message" rows="3" placeholder="Size, materials, timeline…"></textarea>
-
-            <p class="text-xs text-muted mt-5 mb-4">Your details are only used for this quote.</p>
-            <button type="submit" class="btn-primary w-full" id="quote-submit">Send quote request</button>
-            <p id="quote-status" class="text-sm mt-4 hidden"></p>
-          </form>
-        </div>
+        <form id="quote-form" class="max-w-2xl glass rounded-2xl p-6 sm:p-8 space-y-4">
+          <p class="font-display text-lg font-semibold">Request a free quote</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input name="name" required placeholder="Your name" class="w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm outline-none focus:border-primary" />
+            <input name="phone" required placeholder="Phone / WhatsApp" class="w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm outline-none focus:border-primary" />
+          </div>
+          <input name="email" type="email" placeholder="Email (optional)" class="w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm outline-none focus:border-primary" />
+          <textarea name="message" rows="4" required placeholder="What do you need built? (kitchen, TV unit, BICs, vanity…)" class="w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm outline-none focus:border-primary resize-y"></textarea>
+          <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full gradient-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground shadow-elegant hover:brightness-110 transition">Send via WhatsApp</button>
+        </form>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="border-t border-border">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -399,18 +443,26 @@
               <img src="images/logo.png" alt="Wood & Things" class="h-11 w-11 object-cover" />
             </span>
             <span>
-              <span class="block font-display font-bold">WOOD & THINGS</span>
-              <span class="block text-xs text-muted">Custom Joinery & Woodwork</span>
+              <span class="block font-display font-bold">WOOD &amp; THINGS</span>
+              <span class="block text-xs text-muted">Custom Joinery &amp; Woodwork</span>
             </span>
           </div>
           <p class="mt-5 text-sm text-muted leading-relaxed max-w-sm">Custom kitchens, cupboards, units, shop fitting and CNC — built in Khaya Sands.</p>
+          <div class="social-row mt-5 flex gap-2">
+            <a href="https://www.facebook.com/share/1EM4CDq29m/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/woodandthingsza/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+              <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
         </div>
         <div>
           <p class="text-xs uppercase tracking-widest text-muted mb-4">Quick links</p>
           <ul class="space-y-2 text-sm text-muted">
             <li><a href="#services" class="hover:text-foreground">Services</a></li>
             <li><a href="#work" class="hover:text-foreground">Our Work</a></li>
-            <li><a href="#about" class="hover:text-foreground">About</a></li>
+            <li><a href="#reviews" class="hover:text-foreground">Reviews</a></li>
             <li><a href="#contact" class="hover:text-foreground">Contact</a></li>
           </ul>
         </div>
@@ -420,16 +472,19 @@
             <li><a href="tel:+27828456999" class="hover:text-foreground">082 845 6999</a></li>
             <li><a href="mailto:info@woodandthingsza.co.za" class="hover:text-foreground break-all">info@woodandthingsza.co.za</a></li>
             <li><a href="https://wa.me/27828456999" target="_blank" rel="noopener" class="hover:text-foreground">WhatsApp</a></li>
-            <li><a href="https://www.instagram.com/woodandthingsza?igsi=MWQ4bXB3eXQxaXlsNw==" target="_blank" rel="noopener" class="hover:text-foreground">Instagram</a></li>
+            <li><a href="https://www.instagram.com/woodandthingsza/" target="_blank" rel="noopener" class="hover:text-foreground">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/1EM4CDq29m/" target="_blank" rel="noopener" class="hover:text-foreground">Facebook</a></li>
           </ul>
         </div>
       </div>
       <div class="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row gap-3 items-center justify-between text-xs text-muted">
-        <p>© <span id="year"></span> Wood & Things. All rights reserved.</p>
-        <p>Made by <a href="https://gliss.co.za/" target="_blank" rel="noopener" class="text-primary hover:underline">GLISS</a></p>
+        <p>© <span id="year"></span> Wood &amp; Things. All rights reserved.</p>
+        <p>Made by <a href="https://gliss.co.za/" target="_blank" rel="noopener" class="gliss-credit">GLISS</a></p>
       </div>
     </div>
   </footer>
+
+  <a href="https://wa.me/27828456999?text=Hi%20Wood%20%26%20Things%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" class="whatsapp-fab" aria-label="WhatsApp">💬</a>
 
   <script src="main.js" defer></script>
 </body>
