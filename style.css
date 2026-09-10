@@ -608,6 +608,11 @@ textarea.form-input { resize: vertical; }
   text-shadow: 0 0 12px rgba(166, 124, 82, 0.8), 0 0 28px rgba(166, 124, 82, 0.5);
 }
 
+.whatsapp-fab {
+  background: #25D366 !important;
+  color: #fff !important;
+}
+
 /* =========================================================
    Header logo + socials — matched to The Kleeners sizing
    ========================================================= */
