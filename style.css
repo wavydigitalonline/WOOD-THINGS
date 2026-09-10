@@ -609,8 +609,9 @@ textarea.form-input { resize: vertical; }
 }
 
 .whatsapp-fab {
-  background: #25D366 !important;
-  color: #fff !important;
+  background: linear-gradient(135deg, var(--primary-light), var(--primary) 60%, #8b6340) !important;
+  color: var(--primary-foreground) !important;
+  box-shadow: 0 10px 30px -8px rgba(166, 124, 82, 0.65);
 }
 
 /* =========================================================
